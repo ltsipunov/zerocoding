@@ -1,0 +1,1 @@
+from operator import add,sub,mul,truediv as div
