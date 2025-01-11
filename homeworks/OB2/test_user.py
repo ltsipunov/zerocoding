@@ -27,10 +27,13 @@ admin.add_user(user1)
 admin.add_user(user2)
 admin.add_user(user3)
 admin.add_user(user4)
+admin.add_user(admin)
 
 # Список пользователей
 admin.list_users()
-
+# Изменение уровня доступа
+user4.set_access_level('admin')
+user3.set_access_level('advanced')
 # Администратор удаляет пользователя
 admin.remove_user(2)
 

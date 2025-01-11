@@ -17,6 +17,9 @@ class User:
         self.__name = name
 
     def set_access_level(self, access_level):
+        if access_level == 'admin':
+            print('Нельзя поставить уровень admin для обычного пользователя')
+            return
         self.__access_level = access_level
 
 
