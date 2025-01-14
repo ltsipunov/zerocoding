@@ -1,3 +1,6 @@
+#The are two types of employee - ZooKeeper & Veterinarian, who use polymorphic method perform_duties to handle pets
+#Keeper raises health of his pets ("feeds") and Vet decreases disease ("heals")
+
 class ZooEmployee:
     def __init__(self, name, position):
         self.name = name

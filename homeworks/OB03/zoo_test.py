@@ -1,10 +1,10 @@
 from zoo import *
 from animal import *
 from employee import *
+# In this test I left one loose animal and one with two keepers, so I expect these ones must die of hunger or overeating
+# Destiny of other animals depends on their luck
 
 zoo = Zoo("Wildlife Zoo")
-
-
 
 parrot = Bird("Попугай", 2)
 kiwi = Bird("Киви", 3)

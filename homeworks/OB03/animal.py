@@ -1,5 +1,9 @@
 from random import random
 
+# Base class for animals
+# In daily cycle each animal loses <loss> point of its health and additional <disease> points if ill
+# the animal dies if it's  below 0 or higher than 100 at end of daily cycle
+# Methods weight & temperature used to map health and disease to reasonable values
 class Animal:
     def __init__(self, name, age):
         self.name = name
@@ -13,6 +17,7 @@ class Animal:
 
     def make_sound(self):
         raise NotImplementedError("Subclass must implement abstract method")
+
     def weight(self):
         if not self.max_weight:
             raise NotImplementedError("Subclass or instance must implement property max_weight")

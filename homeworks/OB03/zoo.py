@@ -1,3 +1,6 @@
+# Class Zoo combines wmployees and  animals into one model
+# Method day() runs daily simulation - activates all animals and employees to do their daily jobs
+
 class Zoo:
     def __init__(self, name):
         self.name = name
