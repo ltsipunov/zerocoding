@@ -1,12 +1,17 @@
-import telebot
+import os
+from dotenv import load_dotenv
 from datetime import datetime as dt ,timedelta as td
 from time import sleep
+
+import telebot
 import threading
 import requests
 import xml.etree.ElementTree as ET
-# from telegram.ext import Updater, CommandHandler, MessageHandler, Filters, CallbackContext
 
-bot= telebot.TeleBot('7992697765:AAHZpuW2azSZvpFn18WaoleILsHP4NAp964')
+load_dotenv()
+TOKEN = os.getenv("RATE_BOT_TOKEN")
+OS_NAME = os.getenv('OS')
+bot= telebot.TeleBot(TOKEN)
 global currencies
 currencies='USD JPY'
 
@@ -44,7 +49,11 @@ def start_message(message):
     print(currencies)
     currencies='EUR CNY'
     print(currencies)
-    bot.reply_to(message, 'Привет! Я чат-бот, информирующий о курсах валют \n Введите /help для информации по доступным командам')
+    bot.reply_to(message, f'''
+    Привет! Я чат-бот, информирующий о курсах валют
+    Работаю в операционной системе {OS_NAME} 
+    Введите /help для информации по доступным командам'
+    ''')
     request_thread= threading.Thread( target=send_request, args= [message.chat.id] )
     request_thread.start()
 
