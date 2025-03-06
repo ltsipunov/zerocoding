@@ -1,0 +1,115 @@
+
+============================= https://api.github.com ============================= 
+RESPONSE_CODE  ---->  200.
+{'authorizations_url': 'https://api.github.com/authorizations',
+ 'code_search_url': 'https://api.github.com/search/code?q={query}{&page,per_page,sort,order}',
+ 'commit_search_url': 'https://api.github.com/search/commits?q={query}{&page,per_page,sort,order}',
+ 'current_user_authorizations_html_url': 'https://github.com/settings/connections/applications{/client_id}',
+ 'current_user_repositories_url': 'https://api.github.com/user/repos{?type,page,per_page,sort}',
+ 'current_user_url': 'https://api.github.com/user',
+ 'emails_url': 'https://api.github.com/user/emails',
+ 'emojis_url': 'https://api.github.com/emojis',
+ 'events_url': 'https://api.github.com/events',
+ 'feeds_url': 'https://api.github.com/feeds',
+ 'followers_url': 'https://api.github.com/user/followers',
+ 'following_url': 'https://api.github.com/user/following{/target}',
+ 'gists_url': 'https://api.github.com/gists{/gist_id}',
+ 'hub_url': 'https://api.github.com/hub',
+ 'issue_search_url': 'https://api.github.com/search/issues?q={query}{&page,per_page,sort,order}',
+ 'issues_url': 'https://api.github.com/issues',
+ 'keys_url': 'https://api.github.com/user/keys',
+ 'label_search_url': 'https://api.github.com/search/labels?q={query}&repository_id={repository_id}{&page,per_page}',
+ 'notifications_url': 'https://api.github.com/notifications',
+ 'organization_repositories_url': 'https://api.github.com/orgs/{org}/repos{?type,page,per_page,sort}',
+ 'organization_teams_url': 'https://api.github.com/orgs/{org}/teams',
+ 'organization_url': 'https://api.github.com/orgs/{org}',
+ 'public_gists_url': 'https://api.github.com/gists/public',
+ 'rate_limit_url': 'https://api.github.com/rate_limit',
+ 'repository_search_url': 'https://api.github.com/search/repositories?q={query}{&page,per_page,sort,order}',
+ 'repository_url': 'https://api.github.com/repos/{owner}/{repo}',
+ 'starred_gists_url': 'https://api.github.com/gists/starred',
+ 'starred_url': 'https://api.github.com/user/starred{/owner}{/repo}',
+ 'topic_search_url': 'https://api.github.com/search/topics?q={query}{&page,per_page}',
+ 'user_organizations_url': 'https://api.github.com/user/orgs',
+ 'user_repositories_url': 'https://api.github.com/users/{user}/repos{?type,page,per_page,sort}',
+ 'user_search_url': 'https://api.github.com/search/users?q={query}{&page,per_page,sort,order}',
+ 'user_url': 'https://api.github.com/users/{user}'}
+
+============================= https://jsonplaceholder.typicode.com/posts ============================= 
+RESPONSE_CODE  ---->  200.
+[{'body': 'quia et suscipit\n'
+          'suscipit recusandae consequuntur expedita et cum\n'
+          'reprehenderit molestiae ut ut quas totam\n'
+          'nostrum rerum est autem sunt rem eveniet architecto',
+  'id': 1,
+  'title': 'sunt aut facere repellat provident occaecati excepturi optio '
+           'reprehenderit',
+  'userId': 1},
+ {'body': 'est rerum tempore vitae\n'
+          'sequi sint nihil reprehenderit dolor beatae ea dolores neque\n'
+          'fugiat blanditiis voluptate porro vel nihil molestiae ut '
+          'reiciendis\n'
+          'qui aperiam non debitis possimus qui neque nisi nulla',
+  'id': 2,
+  'title': 'qui est esse',
+  'userId': 1},
+ {'body': 'et iusto sed quo iure\n'
+          'voluptatem occaecati omnis eligendi aut ad\n'
+          'voluptatem doloribus vel accusantium quis pariatur\n'
+          'molestiae porro eius odio et labore et velit aut',
+  'id': 3,
+  'title': 'ea molestias quasi exercitationem repellat qui ipsa sit aut',
+  'userId': 1},
+ {'body': 'ullam et saepe reiciendis voluptatem adipisci\n'
+          'sit amet autem assumenda provident rerum culpa\n'
+          'quis hic commodi nesciunt rem tenetur doloremque ipsam iure\n'
+          'quis sunt voluptatem rerum illo velit',
+  'id': 4,
+  'title': 'eum et est occaecati',
+  'userId': 1},
+ {'body': 'repudiandae veniam quaerat sunt sed\n'
+          'alias aut fugiat sit autem sed est\n'
+          'voluptatem omnis possimus esse voluptatibus quis\n'
+          'est aut tenetur dolor neque',
+  'id': 5,
+  'title': 'nesciunt quas odio',
+  'userId': 1},
+ {'body': 'ut aspernatur corporis harum nihil quis provident sequi\n'
+          'mollitia nobis aliquid molestiae\n'
+          'perspiciatis et ea nemo ab reprehenderit accusantium quas\n'
+          'voluptate dolores velit et doloremque molestiae',
+  'id': 6,
+  'title': 'dolorem eum magni eos aperiam quia',
+  'userId': 1},
+ {'body': 'dolore placeat quibusdam ea quo vitae\n'
+          'magni quis enim qui quis quo nemo aut saepe\n'
+          'quidem repellat excepturi ut quia\n'
+          'sunt ut sequi eos ea sed quas',
+  'id': 7,
+  'title': 'magnam facilis autem',
+  'userId': 1},
+ {'body': 'dignissimos aperiam dolorem qui eum\n'
+          'facilis quibusdam animi sint suscipit qui sint possimus cum\n'
+          'quaerat magni maiores excepturi\n'
+          'ipsam ut commodi dolor voluptatum modi aut vitae',
+  'id': 8,
+  'title': 'dolorem dolore est ipsam',
+  'userId': 1},
+ {'body': 'consectetur animi nesciunt iure dolore\n'
+          'enim quia ad\n'
+          'veniam autem ut quam aut nobis\n'
+          'et est aut quod aut provident voluptas autem voluptas',
+  'id': 9,
+  'title': 'nesciunt iure omnis dolorem tempora et accusantium',
+  'userId': 1},
+ {'body': 'quo et expedita modi cum officia vel magni\n'
+          'doloribus qui repudiandae\n'
+          'vero nisi sit\n'
+          'quos veniam quod sed accusamus veritatis error',
+  'id': 10,
+  'title': 'optio molestias id quia eum',
+  'userId': 1}]
+
+============================= https://jsonplaceholder.typicode.com/posts ============================= 
+RESPONSE_CODE  ---->  201.
+{'body': 'bar', 'id': 101, 'title': 'foo', 'userId': '1'}

@@ -4,6 +4,8 @@ def do_request(params):
     function = [requests.get,requests.post][params.pop('type','get')=='post']
     url = params.pop('url')
     response = function(url,params )
+    print(f"\n============================= {url} ============================= ")
+    print(f"RESPONSE_CODE  ---->  {response.status_code}.")
     pprint.pprint(response.json())
 
 placeholder = 'https://jsonplaceholder.typicode.com/posts'
