@@ -1,8 +1,3 @@
-from selenium import webdriver
-from selenium.webdriver.chrome.service import Service
-from selenium.webdriver.common.by import By
-from selenium.webdriver.chrome.options import Options
-# from bs4 import BeautifulSoup
 import keyboard
 import time
 
@@ -17,6 +12,18 @@ def main():
     if locator.max_para==0:
         print("На странице не найдено параграфов.")
         return
+    else:
+        print('''
+        ========================= ИНТЕРНЕТ НАВИГАЦИЯ В ТЕРМИНАЛЕ =====================
+        Управление:
+        Стрелки вверх / вниз   ->  вывод следующего / предыдущего параграфа
+        Стрелки вправо / влево ->  активация следующей / предыдущей  ссылки
+        Пробел                 ->  переход по активной ссылке
+        ESC                    ->  выход из программы    
+        ''' )
+        locator.next_para(1)
+        locator.load_para()
+        locator.display_para()
 
     while True: # ========================= MAIN CONTROL LOOP =====================================
         if keyboard.is_pressed('down'):
@@ -46,11 +53,11 @@ def main():
             print("Выход из программы...")
             break
 
-        if keyboard.is_pressed('space'):  # Клавиша "ESC" для выхода
-            print(f"""
-            Current references:       
-            {locator.links}
-                  """)
+        if keyboard.is_pressed('space'):  # Клавиша "" для выхода
+            locator.go_link()
+            locator.next_para(1)
+            locator.load_para()
+            locator.display_para()
 
 if __name__ == '__main__':
     main()
