@@ -63,7 +63,7 @@ ROBOTSTXT_OBEY = True
 # Configure item pipelines
 # See https://docs.scrapy.org/en/latest/topics/item-pipeline.html
 ITEM_PIPELINES = {
-   # "divanpars.pipelines.SvetparsPipeline": 300,
+   "divanpars.pipelines.SvetparsPipeline": 300,
    "divanpars.pipelines.DivanparsPipeline":800
 }
 

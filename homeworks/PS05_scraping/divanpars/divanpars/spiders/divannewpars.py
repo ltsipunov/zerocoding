@@ -11,6 +11,6 @@ class DivannewparsSpider(scrapy.Spider):
         for divan in divans:
             item = DivanparsItem()
             item['name'] = divan.css('div.lsooF span::text').get()
-            item['price']= divan.css('div.pY3d2 span::text').get()
+            item['price']= divan.css('div.pY3d2 span::text').get().replace(' ','')
             item['url']= divan.css('a').attrib['href']
             yield(item)
