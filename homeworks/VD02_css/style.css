@@ -4,7 +4,12 @@
     font-family: 'Roboto', sans-serif;
    background-color: burlywood;
    border-radius: 60px;
+}
 
+.card:hover {
+    background-color: beige;
+    width: 480px;
+   transition: 1s;
 }
 
 .fio {
@@ -19,10 +24,20 @@
 .phone,
 .city {
    text-indent: 8px;	
+    font-family: times;
     padding: 2px;	
     font-size: 16px;
     color: #333333; /* Темно-серый для основного текста */
 }
+
+.birthdate{
+	font-style: italic;
+}
+
+.email{
+	text-decoration: underline;
+}
+
 
 .info p {
    padding: 24px;
