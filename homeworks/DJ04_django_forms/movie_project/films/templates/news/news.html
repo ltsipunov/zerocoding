@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<table>
+{% block content %}
+  {% for new in news  %}
+    <tr>
+        <td>{{ new.pub_date }} {{ new.user }} </td>
+        <td> <h5> {{ new.title }}  </h5> </td>
+        <td> {{ new.short_description }} </td>
+    </tr><tr>
+        <td span="4">  {{ new.text }}  </td>
+   </tr>
+   {% endfor  %}
+{% endblock %}
+</table>
+
+</body>
+</html>
