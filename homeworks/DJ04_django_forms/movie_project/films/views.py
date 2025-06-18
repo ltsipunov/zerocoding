@@ -4,7 +4,11 @@ from .forms import Films_postForm
 
 def films(request):
     films =  Film.objects.all()
-    return render(request, 'films.html', {'films': films})
+    return render(request, 'films.html',
+            {'records': films,
+                     'title': 'Приложение Films',
+                    'header': 'Список фильмов',
+                   'empty': 'Нет фильмов для показа'})
 
 def fill(request):
     error = ''
