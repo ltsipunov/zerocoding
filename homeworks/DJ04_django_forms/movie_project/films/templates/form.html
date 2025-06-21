@@ -1,0 +1,13 @@
+{% extends 'layout.html' %}
+{% block title %} Приложение Фильмы {% endblock %}
+{% block table %}{% endblock %}
+<h1>форма для ввода данных </h1>
+<form method="post" >
+    {% csrf_token %}
+    {{ form.as_p }}
+<!--    {% block fields %}-->
+<!--        Абстрактная форма-->
+<!--     {% endblock %}-->
+    <button type="submit"> Добавить </button>
+</form>>
+<p>{{error}}</p>

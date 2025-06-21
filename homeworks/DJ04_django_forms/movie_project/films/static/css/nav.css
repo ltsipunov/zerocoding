@@ -1,0 +1,9 @@
+.inline-list {
+  list-style-type: none; /* Убираем маркеры */
+  padding: 0; /* Убираем отступы */
+}
+
+.inline-list li {
+  display: inline-block; /* Располагаем элементы в строку */
+  margin-right: 10px; /* Добавляем небольшой отступ между элементами */
+}

@@ -1,0 +1,17 @@
+{% extends 'layout.html' %}
+{% block table %}
+<div class="container my-4">
+    <h1 class="mb-4 text-center">{{ header }}</h1>
+    {% for rec in records %}
+    <div class="card mb-3 shadow-sm">
+        {% block record %}
+        <div class="card-header d-flex justify-content-between align-items-center bg-light">
+                Абстрактная карточка записи
+        </div>
+        {% endblock %}
+    </div>
+    {% empty %}
+    <p class="text-center">{{ empty }}</p>
+    {% endfor %}
+</div>
+{% endblock %}

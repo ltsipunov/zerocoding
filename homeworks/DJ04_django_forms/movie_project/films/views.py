@@ -20,4 +20,4 @@ def fill(request):
         else:
             error = "Ошибка заполнения данных"
     form = Films_postForm()
-    return render(request, 'fill.html',{'form':form,'error': error})
+    return render(request, 'fill.html',{'form':form,'error': error,'submit_label': 'Добавить фильм'})
