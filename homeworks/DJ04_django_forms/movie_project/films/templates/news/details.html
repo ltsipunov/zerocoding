@@ -1,0 +1,13 @@
+{% extends 'layout.html' %}
+
+{% block table %}
+<h1> Текст Новости </h1>
+<div class="card" style="width: 36rem;">
+  <div class="card-body">
+    <h5 class="card-title">{{ rec.title }}</h5>
+    <class="card-text"><i> {{ rec.pub_date }} </i> <b>{{ rec.user }}</b>>  </h5>
+    <p class="card-text">{{ rec.short_description }}</p>
+    <p class="card-text"><small class="text-muted">{{ rec.text }}</small></p>
+  </div>
+</div>
+{% endblock %}

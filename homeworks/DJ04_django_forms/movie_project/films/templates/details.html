@@ -1,7 +1,12 @@
 {% extends 'layout.html' %}
-<h1> Подробности </h1>>
+
 {% block table %}
-<p>>{{ rec.title }}</p>
-<p> {{ rec.description }} </p>
-<p> {{ rec.review }} </p>
+<h1> Подробности </h1>>
+<div class="card" style="width: 36rem;">
+  <div class="card-body">
+    <h5 class="card-title">{{ rec.title }}</h5>
+    <p class="card-text">{{ rec.description }}</p>
+    <p class="card-text"><small class="text-muted">{{ rec.review }}</small></p>
+  </div>
+</div>
 {% endblock %}
