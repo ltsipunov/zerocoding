@@ -40,6 +40,15 @@
   <a class="nav-link" style="font-size: 1.5rem;" href="{% url 'fill' %}">+(фильм)</a>
   <a class="nav-link" style="font-size: 1.5rem;" href="{% url 'news_home' %}">Новости</a>
   <a class="nav-link" style="font-size: 1.5rem;" href="{% url 'news_fill' %}">+(новость)</a>
+  <a class="nav-link" style="font-size: 1.5rem;" href="{% url 'index' %}">Пользователи</a>
+  <a class="nav-link" style="font-size: 1.5rem;" href="{% url 'register' %}">+(регистрация)</a>
+  <a class="nav-link" style="font-size: 1.5rem;" href="{% url 'profile' %}">(профиль)</a>
+  {% if  user.username %}
+    <div class="nav-link" style="font-size: 1.5rem;">  {{ user.username }} </div>
+    <a class="nav-link" style="font-size: 1.5rem; " href="{% url 'logout' %}">(выйти)</a>
+  {% else %}
+      <a class="nav-link" style="font-size: 1.5rem;" href="{% url 'login' %}"> ВОЙТИ </a>
+  {%  endif  %}
 </nav>
 
 {% block table %}
