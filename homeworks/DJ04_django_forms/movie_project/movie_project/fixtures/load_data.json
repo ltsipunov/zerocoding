@@ -1,0 +1,788 @@
+[
+{
+  "model": "films.film",
+  "pk": 1,
+  "fields": {
+    "title": "Титаник",
+    "description": "Романтическая трагедия на фоне крушения лайнера 1912 года.",
+    "review": "Эпическая история любви на фоне катастрофы, наполненная драматизмом и эмоциями. Фильм оставляет глубокий след и заставляет задуматься о судьбе и любви."
+  }
+},
+{
+  "model": "films.film",
+  "pk": 2,
+  "fields": {
+    "title": "Начало",
+    "description": "Фильм о проникновении в сны для кражи секретов.",
+    "review": "Умное и захватывающее кино с уникальной концепцией. Визуальные эффекты и сюжет держат в напряжении с первой до последней минуты."
+  }
+},
+{
+  "model": "films.film",
+  "pk": 3,
+  "fields": {
+    "title": "Темный рыцарь",
+    "description": "Бэтмен сталкивается с Джокером в борьбе за Готэм.",
+    "review": "Психологический и динамичный супергеройский фильм, раскрывающий тему моральных выборов и хаоса. Игра Хита Леджера великолепна."
+  }
+},
+{
+  "model": "films.film",
+  "pk": 4,
+  "fields": {
+    "title": "Властелин колец: Братство кольца",
+    "description": "Путешествие хоббитов и их друзей для уничтожения кольца.",
+    "review": "Эпическая фэнтези о борьбе добра и зла, полном волшебства и приключений. Впечатляющий визуальный ряд и проработанный сюжет."
+  }
+},
+{
+  "model": "films.film",
+  "pk": 5,
+  "fields": {
+    "title": "Форрест Гамп",
+    "description": "История о человеке с низким IQ, оказавшемся свидетелем важных событий.",
+    "review": "Трогательная история о силе духа, любви и судьбе. Фильм вдохновляет и вызывает слезы."
+  }
+},
+{
+  "model": "films.film",
+  "pk": 6,
+  "fields": {
+    "title": "Матрица",
+    "description": "Молодой программист обнаруживает, что живет в виртуальной реальности.",
+    "review": "Фантастический фильм с философскими вопросами о реальности и свободе. Визуальные эффекты и сюжет поражают воображение."
+  }
+},
+{
+  "model": "films.film",
+  "pk": 7,
+  "fields": {
+    "title": "Интерстеллар",
+    "description": "Путешествие за пределы нашей галактики ради спасения человечества.",
+    "review": "Эпическая космическая драма о любви, времени и выживании. Визуальные эффекты и сюжет вызывают глубокие размышления."
+  }
+},
+{
+  "model": "films.film",
+  "pk": 8,
+  "fields": {
+    "title": "Железный человек",
+    "description": "Миллиардер-изобретатель создает костюм для борьбы с преступностью.",
+    "review": "Захватывающий фильм о технологии, ответственности и личностном росте. Вдохновляющая история."
+  }
+},
+{
+  "model": "films.film",
+  "pk": 9,
+  "fields": {
+    "title": "Побег из Шоушенка",
+    "description": "История о надежде и свободе в тюрьме.",
+    "review": "Фильм о дружбе, надежде и силе духа. Классика кино, которая не оставит равнодушным."
+  }
+},
+{
+  "model": "films.film",
+  "pk": 10,
+  "fields": {
+    "title": "Пираты Карибского моря: Проклятие Черной жемчужины",
+    "description": "Приключения капитана Джека Воробья и его команды.",
+    "review": "Веселое и динамичное морское фэнтези с яркими персонажами и запоминающимися сценами."
+  }
+},
+{
+  "model": "films.film",
+  "pk": 11,
+  "fields": {
+    "title": "Джокер",
+    "description": "Психологическая драма о падении человека в бездну безумия.",
+    "review": "Глубокий психологический триллер, раскрывающий происхождение злодея. Впечатляющая игра Хоакина Феникса."
+  }
+},
+{
+  "model": "films.film",
+  "pk": 12,
+  "fields": {
+    "title": "Война миров",
+    "description": "Межгалактическое нападение на Землю.",
+    "review": "Захватывающий научно-фантастический фильм о борьбе человечества с инопланетянами, вызывающий трепет и страх."
+  }
+},
+{
+  "model": "films.film",
+  "pk": 13,
+  "fields": {
+    "title": "Ла-Ла Ленд",
+    "description": "Любовная история в Лос-Анджелесе с музыкальными номерами.",
+    "review": "Мелодрама о мечтах, любви и реальности, наполненная яркими музыкальными сценами и атмосферой Голливуда."
+  }
+},
+{
+  "model": "films.film",
+  "pk": 14,
+  "fields": {
+    "title": "Мстители: Финал",
+    "description": "Кульминация борьбы супергероев с Таносом.",
+    "review": "Эпический финал киновселенной Marvel, полный эмоций, экшена и незабываемых сцен."
+  }
+},
+{
+  "model": "films.film",
+  "pk": 15,
+  "fields": {
+    "title": "Зеленая книга",
+    "description": "История дружбы афроамериканского музыканта и его грузина-водителя.",
+    "review": "Трогательный фильм о расовых предрассудках, дружбе и человечности, получивший множество наград."
+  }
+},
+{
+  "model": "films.film",
+  "pk": 18,
+  "fields": {
+    "title": "Кино",
+    "description": "Вино",
+    "review": "И домино"
+  }
+},
+{
+  "model": "news.news_post",
+  "pk": 1,
+  "fields": {
+    "title": "Новость 1",
+    "short_description": "Краткое описание 1",
+    "text": "Полный текст новости 1",
+    "pub_date": "2023-10-01T10:00:00Z",
+    "user": "alex"
+  }
+},
+{
+  "model": "news.news_post",
+  "pk": 2,
+  "fields": {
+    "title": "Новость 2",
+    "short_description": "Краткое описание 2",
+    "text": "Полный текст новости 2",
+    "pub_date": "2023-10-02T11:00:00Z",
+    "user": "maria"
+  }
+},
+{
+  "model": "news.news_post",
+  "pk": 3,
+  "fields": {
+    "title": "Новость 3",
+    "short_description": "Краткое описание 3",
+    "text": "Полный текст новости 3",
+    "pub_date": "2023-10-03T12:00:00Z",
+    "user": "alex"
+  }
+},
+{
+  "model": "news.news_post",
+  "pk": 4,
+  "fields": {
+    "title": "Новость 4",
+    "short_description": "Краткое описание 4",
+    "text": "Полный текст новости 4",
+    "pub_date": "2023-10-04T13:00:00Z",
+    "user": "maria"
+  }
+},
+{
+  "model": "news.news_post",
+  "pk": 5,
+  "fields": {
+    "title": "Новость 5",
+    "short_description": "Краткое описание 5",
+    "text": "Полный текст новости 5",
+    "pub_date": "2023-10-05T14:00:00Z",
+    "user": "alex"
+  }
+},
+{
+  "model": "news.news_post",
+  "pk": 6,
+  "fields": {
+    "title": "Новость 6",
+    "short_description": "Краткое описание 6",
+    "text": "Полный текст новости 6",
+    "pub_date": "2023-10-06T15:00:00Z",
+    "user": "maria"
+  }
+},
+{
+  "model": "news.news_post",
+  "pk": 7,
+  "fields": {
+    "title": "Новость 7",
+    "short_description": "Краткое описание 7",
+    "text": "Полный текст новости 7",
+    "pub_date": "2023-10-07T16:00:00Z",
+    "user": "alex"
+  }
+},
+{
+  "model": "news.news_post",
+  "pk": 8,
+  "fields": {
+    "title": "Новость 8",
+    "short_description": "Краткое описание 8",
+    "text": "Полный текст новости 8",
+    "pub_date": "2023-10-08T17:00:00Z",
+    "user": "maria"
+  }
+},
+{
+  "model": "news.news_post",
+  "pk": 9,
+  "fields": {
+    "title": "Новость 9",
+    "short_description": "Краткое описание 9",
+    "text": "Полный текст новости 9",
+    "pub_date": "2023-10-09T18:00:00Z",
+    "user": "alex"
+  }
+},
+{
+  "model": "news.news_post",
+  "pk": 10,
+  "fields": {
+    "title": "Новость 10",
+    "short_description": "Краткое описание 10",
+    "text": "Полный текст новости 10",
+    "pub_date": "2023-10-10T19:00:00Z",
+    "user": "maria"
+  }
+},
+{
+  "model": "news.news_post",
+  "pk": 16,
+  "fields": {
+    "title": "Новость 18",
+    "short_description": "lorem ipsum",
+    "text": "\"Бүгінгі күннің өмірі тез әрі өзгермелі. Адамдар күн сайын жаңа нәрселерді үйреніп, өзіне қажетті дағдыларды дамытып жатыр. Табиғаттың сұлулығы мен адамзаттың еңбегі әрқашан ерекше әсер қалдырады. Осы әлемнің бір бөлшегі бола отырып, біз тұрақтылық пен дамуды қатар ұстануымыз керек. Ұлттық дәстүрлеріміз бен мәдениетімізді сақтау — болашақ ұрпаққа аманат. Қазіргі заманда білім мен ғылымға аса мән беру маңызды, өйткені олар елдің болашағын айқындайды.\"",
+    "pub_date": "2025-06-28T01:53:00Z",
+    "user": "johndoe"
+  }
+},
+{
+  "model": "news.news_post",
+  "pk": 17,
+  "fields": {
+    "title": "Новость 20",
+    "short_description": "Ich weiß nicht, was soll es bedeuten",
+    "text": "'\r\n Ich weiß nicht, was soll es bedeuten,\r\nDaß ich so traurig bin;\r\nEin Mährchen aus alten Zeiten,\r\nDas kommt mir nicht aus dem Sinn.\r\n'",
+    "pub_date": "2025-06-21T21:24:00Z",
+    "user": "johndoe"
+  }
+},
+{
+  "model": "users.user",
+  "pk": 1,
+  "fields": {
+    "password": "pbkdf2_sha256$1000000$qhfNSGaP4TaxUKOAC3IuIO$UhQcmnZqQvwbY3iGjj+z7c/JKLJZaioucvk1tPIGRWA=",
+    "last_login": "2025-06-27T17:19:44.027Z",
+    "is_superuser": true,
+    "username": "admin",
+    "first_name": "",
+    "last_name": "",
+    "is_staff": true,
+    "is_active": true,
+    "date_joined": "2025-06-24T14:12:57.904Z",
+    "phone_number": "",
+    "email": "l.tsipunov@yandex.ru",
+    "groups": [],
+    "user_permissions": []
+  }
+},
+{
+  "model": "users.user",
+  "pk": 2,
+  "fields": {
+    "password": "pbkdf2_sha256$1000000$atVKpuYTy5IN23A4TCaOpd$uzlpMS8hob3HSo9j2bhd2wLrsZr0ha/T98P50vrfFbU=",
+    "last_login": "2025-06-30T14:30:20.551Z",
+    "is_superuser": false,
+    "username": "johndoe",
+    "first_name": "John",
+    "last_name": "Doe",
+    "is_staff": false,
+    "is_active": true,
+    "date_joined": "2024-01-02T10:00:00Z",
+    "phone_number": "+79001234567",
+    "email": "john.doe@example.com",
+    "groups": [],
+    "user_permissions": []
+  }
+},
+{
+  "model": "users.user",
+  "pk": 3,
+  "fields": {
+    "password": "pbkdf2_sha256$1000000$XQgzahs1sGuczWXPJgvpBv$TVP15ilm4vb1AqFl3iFggg3FLaZiDWA6QOP5iD80Ltc=",
+    "last_login": null,
+    "is_superuser": false,
+    "username": "janedoe",
+    "first_name": "Jane",
+    "last_name": "Doe",
+    "is_staff": false,
+    "is_active": true,
+    "date_joined": "2024-01-03T11:00:00Z",
+    "phone_number": "+79007654321",
+    "email": "jane.doe@example.com",
+    "groups": [],
+    "user_permissions": []
+  }
+},
+{
+  "model": "users.user",
+  "pk": 4,
+  "fields": {
+    "password": "pbkdf2_sha256$1000000$Ms0cKEhg9xAp4CRwobXmAT$KuXsliNd5Ai48FxRmuB1LPd/8ch0kBp0xybB5/GeP4M=",
+    "last_login": null,
+    "is_superuser": false,
+    "username": "alex",
+    "first_name": "Alex",
+    "last_name": "Smith",
+    "is_staff": false,
+    "is_active": true,
+    "date_joined": "2024-01-04T12:00:00Z",
+    "phone_number": "+79005551234",
+    "email": "alex.smith@example.com",
+    "groups": [],
+    "user_permissions": []
+  }
+},
+{
+  "model": "users.user",
+  "pk": 5,
+  "fields": {
+    "password": "pbkdf2_sha256$1000000$Q7bZ1F8oFlOVabTBTTKRwJ$8hArNRwmbKO1zaCXl/kvOayZwvmoK1pnIM1ZyGSNHPA=",
+    "last_login": null,
+    "is_superuser": false,
+    "username": "maria",
+    "first_name": "Maria",
+    "last_name": "Ivanova",
+    "is_staff": false,
+    "is_active": true,
+    "date_joined": "2024-01-05T13:00:00Z",
+    "phone_number": "+79009876543",
+    "email": "maria.ivanova@example.com",
+    "groups": [],
+    "user_permissions": []
+  }
+},
+{
+  "model": "users.user",
+  "pk": 6,
+  "fields": {
+    "password": "pbkdf2_sha256$1000000$yiyGA6HvTP0uqTjwRO9YC8$EJJOXMkI0U7/EaVOjJk2Bx+nHweGly14Gg957RC5aw0=",
+    "last_login": "2025-06-27T17:17:02.207Z",
+    "is_superuser": false,
+    "username": "adQFqasf",
+    "first_name": "",
+    "last_name": "",
+    "is_staff": false,
+    "is_active": true,
+    "date_joined": "2025-06-24T15:46:56.402Z",
+    "phone_number": "+79991112222",
+    "email": "1@mail.ru",
+    "groups": [],
+    "user_permissions": []
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 1,
+  "fields": {
+    "name": "Can add Фильм",
+    "content_type": 1,
+    "codename": "add_film"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 2,
+  "fields": {
+    "name": "Can change Фильм",
+    "content_type": 1,
+    "codename": "change_film"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 3,
+  "fields": {
+    "name": "Can delete Фильм",
+    "content_type": 1,
+    "codename": "delete_film"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 4,
+  "fields": {
+    "name": "Can view Фильм",
+    "content_type": 1,
+    "codename": "view_film"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 5,
+  "fields": {
+    "name": "Can add log entry",
+    "content_type": 2,
+    "codename": "add_logentry"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 6,
+  "fields": {
+    "name": "Can change log entry",
+    "content_type": 2,
+    "codename": "change_logentry"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 7,
+  "fields": {
+    "name": "Can delete log entry",
+    "content_type": 2,
+    "codename": "delete_logentry"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 8,
+  "fields": {
+    "name": "Can view log entry",
+    "content_type": 2,
+    "codename": "view_logentry"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 9,
+  "fields": {
+    "name": "Can add permission",
+    "content_type": 3,
+    "codename": "add_permission"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 10,
+  "fields": {
+    "name": "Can change permission",
+    "content_type": 3,
+    "codename": "change_permission"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 11,
+  "fields": {
+    "name": "Can delete permission",
+    "content_type": 3,
+    "codename": "delete_permission"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 12,
+  "fields": {
+    "name": "Can view permission",
+    "content_type": 3,
+    "codename": "view_permission"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 13,
+  "fields": {
+    "name": "Can add group",
+    "content_type": 4,
+    "codename": "add_group"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 14,
+  "fields": {
+    "name": "Can change group",
+    "content_type": 4,
+    "codename": "change_group"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 15,
+  "fields": {
+    "name": "Can delete group",
+    "content_type": 4,
+    "codename": "delete_group"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 16,
+  "fields": {
+    "name": "Can view group",
+    "content_type": 4,
+    "codename": "view_group"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 17,
+  "fields": {
+    "name": "Can add user",
+    "content_type": 5,
+    "codename": "add_user"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 18,
+  "fields": {
+    "name": "Can change user",
+    "content_type": 5,
+    "codename": "change_user"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 19,
+  "fields": {
+    "name": "Can delete user",
+    "content_type": 5,
+    "codename": "delete_user"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 20,
+  "fields": {
+    "name": "Can view user",
+    "content_type": 5,
+    "codename": "view_user"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 21,
+  "fields": {
+    "name": "Can add content type",
+    "content_type": 6,
+    "codename": "add_contenttype"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 22,
+  "fields": {
+    "name": "Can change content type",
+    "content_type": 6,
+    "codename": "change_contenttype"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 23,
+  "fields": {
+    "name": "Can delete content type",
+    "content_type": 6,
+    "codename": "delete_contenttype"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 24,
+  "fields": {
+    "name": "Can view content type",
+    "content_type": 6,
+    "codename": "view_contenttype"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 25,
+  "fields": {
+    "name": "Can add session",
+    "content_type": 7,
+    "codename": "add_session"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 26,
+  "fields": {
+    "name": "Can change session",
+    "content_type": 7,
+    "codename": "change_session"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 27,
+  "fields": {
+    "name": "Can delete session",
+    "content_type": 7,
+    "codename": "delete_session"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 28,
+  "fields": {
+    "name": "Can view session",
+    "content_type": 7,
+    "codename": "view_session"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 29,
+  "fields": {
+    "name": "Can add news_post",
+    "content_type": 8,
+    "codename": "add_news_post"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 30,
+  "fields": {
+    "name": "Can change news_post",
+    "content_type": 8,
+    "codename": "change_news_post"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 31,
+  "fields": {
+    "name": "Can delete news_post",
+    "content_type": 8,
+    "codename": "delete_news_post"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 32,
+  "fields": {
+    "name": "Can view news_post",
+    "content_type": 8,
+    "codename": "view_news_post"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 33,
+  "fields": {
+    "name": "Can add user",
+    "content_type": 9,
+    "codename": "add_user"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 34,
+  "fields": {
+    "name": "Can change user",
+    "content_type": 9,
+    "codename": "change_user"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 35,
+  "fields": {
+    "name": "Can delete user",
+    "content_type": 9,
+    "codename": "delete_user"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 36,
+  "fields": {
+    "name": "Can view user",
+    "content_type": 9,
+    "codename": "view_user"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 1,
+  "fields": {
+    "app_label": "films",
+    "model": "film"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 2,
+  "fields": {
+    "app_label": "admin",
+    "model": "logentry"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 3,
+  "fields": {
+    "app_label": "auth",
+    "model": "permission"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 4,
+  "fields": {
+    "app_label": "auth",
+    "model": "group"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 5,
+  "fields": {
+    "app_label": "auth",
+    "model": "user"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 6,
+  "fields": {
+    "app_label": "contenttypes",
+    "model": "contenttype"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 7,
+  "fields": {
+    "app_label": "sessions",
+    "model": "session"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 8,
+  "fields": {
+    "app_label": "news",
+    "model": "news_post"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 9,
+  "fields": {
+    "app_label": "users",
+    "model": "user"
+  }
+}
+]
