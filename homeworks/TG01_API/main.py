@@ -18,7 +18,7 @@ dp = Dispatcher()
 translator = Translator()
 # -------------------- REQUESTS ------------------------
 async def get_weather(city = 'Moscow' ):
-    url = f"http://api.openweathermap.org/data/2.5/weather?q={city}&appid={APIKEY}&units=metric"
+    url = f"http://api.openweathermap.org/data/2.5/weather?q={city}&appid={APIKEY}&units=metric&lang=ru"
     async with aiohttp.ClientSession() as session:
         async with session.get(url) as response:
             if response.status == 200:
@@ -41,31 +41,33 @@ async def translate(text):
 #---------------------------- HANDLERS ----------------
 @dp.message(CommandStart())
 async def start(message: Message):
-    await message.answer("Приветики, я бот!")
+    await message.answer("Добрый день, с вами общается  бот-недоучка!")
 
 @dp.message(Command('help'))
 async def help(message):
     await message.answer("""
-Этот бот понимает команды /start, /help, /weather 
+Я - бот, понимаю команды /start, /help, /weather
+Любой нераспознанный  текст переводится с русского на английский  и с английского на русский.  
         """)
-
-@dp.message(Command('voice'))
-async def voice(message):
-    tts =  gTTS(text='Прогноз погоды на сегодня по городу Москва', lang='ru')
-    tts.save("temp.ogg")
-    audio = FSInputFile("temp.ogg")
-    print(audio)
-    await bot.send_voice(chat_id=message.chat.id, voice=audio)
-    os.remove("temp.ogg")
 
 @dp.message(Command('weather'))
 async def weather(message):
+    winddir = lambda d: ['Севврный','Северо-Восточный','Восточный','Юго-Восточный',
+                         'Южный', 'Юго-Западный','Западный','Северо-Западный',][ round(d/45) ]
     city = 'Moscow'
     json= await get_weather(city)
-    await message.answer(f"""
-Город: {city}    
-Облачность: { json['weather'][0]['description'] }. Температура #{json['main']['temp']}
-        """)
+    text=f"""
+Прогноз погоды на сегодня для города {json['name']}    
+Температура {int( json['main']['temp'] )} градусов ощущается как {int( json['main']['temp'] )} градусов. 
+{ json['weather'][0]['description'] }, влажность {json['main']['humidity'] }  процентов   
+Ветер { winddir(json['wind']['deg']) }, скорость { int(json['wind']['speed']) } метров в секунду
+        """
+    await message.answer(text+"\nПодождите, для тех, кто не понял, сейчас зачитаю текст....")
+    tts =  gTTS(text=text, lang='ru')
+    tts.save("temp.ogg")
+    audio = FSInputFile("temp.ogg")
+    await bot.send_voice(chat_id=message.chat.id, voice=audio)
+    os.remove("temp.ogg")
 
 @dp.message(F.text == 'Что такое ИИ?')
 async def aitext(message):
