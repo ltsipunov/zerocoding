@@ -1,9 +1,11 @@
 import asyncio
 from aiogram import Bot,Dispatcher,F
-
 from aiogram.filters import Command,CommandStart
-from aiogram.types import Message
+from aiogram.types import Message, FSInputFile
 import aiohttp
+
+from googletrans import Translator
+from gtts import gTTS
 
 import os
 from  dotenv import load_dotenv
@@ -13,8 +15,8 @@ APIKEY = os.getenv('OPENWEATHERMAP_APIKEY')
 
 bot = Bot(token=TOKEN)
 dp = Dispatcher()
-
-# -------------------- REQUEST
+translator = Translator()
+# -------------------- REQUESTS ------------------------
 async def get_weather(city = 'Moscow' ):
     url = f"http://api.openweathermap.org/data/2.5/weather?q={city}&appid={APIKEY}&units=metric"
     async with aiohttp.ClientSession() as session:
@@ -24,6 +26,17 @@ async def get_weather(city = 'Moscow' ):
                 return data
             else:
                 return None
+
+async def translate(text):
+    try:
+        # Определение языка автоматически
+        detected_lang = await translator.detect(text)
+        dest = ['en','ru'][detected_lang.lang == 'en']
+        translated = await translator.translate(text, dest=dest)
+        # translated = await translator.translate(text, dest= 'en')
+        return translated.text
+    except Exception as e:
+        return (f"Sorry..: {e}")
 
 #---------------------------- HANDLERS ----------------
 @dp.message(CommandStart())
@@ -35,6 +48,15 @@ async def help(message):
     await message.answer("""
 Этот бот понимает команды /start, /help, /weather 
         """)
+
+@dp.message(Command('voice'))
+async def voice(message):
+    tts =  gTTS(text='Прогноз погоды на сегодня по городу Москва', lang='ru')
+    tts.save("temp.ogg")
+    audio = FSInputFile("temp.ogg")
+    print(audio)
+    await bot.send_voice(chat_id=message.chat.id, voice=audio)
+    os.remove("temp.ogg")
 
 @dp.message(Command('weather'))
 async def weather(message):
@@ -52,6 +74,16 @@ async def aitext(message):
 выполнять творческие функции, которые традиционно считаются прерогативой человека; 
 наука и технология создания интеллектуальных машин,особенно интеллектуальных компьютерных программ 
          """)
+
+@dp.message(F.photo)
+async def react_photo(message: Message):
+    await message.answer('Принимаю фото...')
+    await bot.download(message.photo[-1],destination=f'img/{message.photo[-1].file_id}.png')
+
+@dp.message()
+async def default(message):
+    trs = await translate(message.text)
+    await message.answer(trs)
 
 # --------------------------- MAIN  -------------------
 async def main():
