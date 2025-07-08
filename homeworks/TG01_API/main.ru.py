@@ -38,9 +38,11 @@ async def help(message):
 
 @dp.message(Command('weather'))
 async def weather(message):
-    json= await get_weather()
+    city = 'Moscow'
+    json= await get_weather(city)
     await message.answer(f"""
-{ json['weather'][0]['description'] }. Температура #{json['main']['temp']}
+Город: {city}    
+Облачность: { json['weather'][0]['description'] }. Температура #{json['main']['temp']}
         """)
 
 @dp.message(F.text == 'Что такое ИИ?')
