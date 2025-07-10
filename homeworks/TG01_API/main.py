@@ -1,11 +1,12 @@
 import asyncio
 from aiogram import Bot,Dispatcher,F
 from aiogram.filters import Command,CommandStart
-from aiogram.types import Message, FSInputFile
+from aiogram.types import Message, FSInputFile, CallbackQuery
 import aiohttp
 
 from googletrans import Translator
 from gtts import gTTS
+import keyboards as kb
 
 import os
 from  dotenv import load_dotenv
@@ -36,20 +37,53 @@ async def translate(text):
         # translated = await translator.translate(text, dest= 'en')
         return translated.text
     except Exception as e:
-        return (f"Sorry..: {e}")
+        return f"Sorry..: {e}"
 
 #---------------------------- HANDLERS ----------------
 @dp.message(CommandStart())
 async def start(message: Message):
-    await message.answer("Добрый день, с вами общается  бот-недоучка!")
+    # await message.answer("Добрый день, с вами общается бот-недоучка!")
+    await message.answer(f'Приветики, {message.from_user.first_name}', reply_markup=kb.main)
 
 @dp.message(Command('help'))
 async def help(message):
     await message.answer("""
-Я - бот, понимаю команды /start, /help, /weather
+Я - бот, понимаю команды /start, /help, /weather, /links
 Любой нераспознанный  текст переводится с русского на английский  и с английского на русский.  
         """)
 
+@dp.message(Command('links'))
+async def links(message):
+    await message.answer(f"Покажу красивые картинки 24/7 !", reply_markup=kb.inline_keyboard_test)
+
+@dp.message(Command('dynamic'))
+async def dynamic(message):
+    await message.answer(f"Динамическое меню", reply_markup=kb.inline_keyboard_extend)
+
+# ---------------------------- BUTTON HANDLERS -------------------------------
+@dp.message(F.text=='Привет!')
+async def hello_responder(message):
+    await message.answer(f"Привет, {message.from_user.first_name} !")
+
+@dp.message(F.text=='Пока!')
+async def bye_responder(message):
+    await message.answer(f"До свидания, {message.from_user.first_name} !")
+
+@dp.callback_query(F.data=='extend')
+async def proceed_responder(callback):
+    await callback.message.edit_text(f"Динамическое меню !",reply_markup=kb.inline_keyboard_options)
+
+@dp.callback_query(F.data=='option1')
+async def proceed_responder(callback):
+    await callback.answer("Выбрал")
+    await callback.message.answer(f"Выбран вариант 1")
+
+@dp.callback_query(F.data=='option2')
+async def proceed_responder(callback):
+    await callback.message.answer(f"Выбран вариант 2")
+
+
+# ---------------------------- WEATHER HANDLER -------------------------------
 @dp.message(Command('weather'))
 async def weather(message):
     winddir = lambda d: ['Севврный','Северо-Восточный','Восточный','Юго-Восточный',
