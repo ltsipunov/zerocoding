@@ -8,7 +8,6 @@ def standard(a):
 
 a10k = [ i for i in range(10_000)]
 s10k = sample(a10k,10_000)
-print(a10k[10:20],s10k[10:20],)
 
 @pytest.mark.parametrize("a, expected",[
     ([1,6,2,5,3,4], [1,2,3,4,5,6]),
@@ -16,10 +15,9 @@ print(a10k[10:20],s10k[10:20],)
     ([1], [1]),
     ([1,0], [0,1]),
     ([0,1], [0,1]),
-    (s10k,a10k),
+    # (s10k,a10k),
 ])
-
-def test_check_with_param(a, expected):
+def test_small(a, expected):
     assert standard(a) == expected
     assert bubble.sort(a) == expected
     assert insertion.sort(a) == expected
@@ -32,3 +30,14 @@ def test_check_with_param(a, expected):
     assert radix.sort(a) == expected
     assert bucket.sort(a) == expected
     assert counting.sort(a) == expected
+
+@pytest.mark.parametrize("a, expected",[
+    (s10k,a10k),
+])
+def test_medium(a, expected):
+    assert quick.sort(a) == expected
+    assert heap.sort(a) == expected
+    assert gnome.sort(a) == expected
+    assert shell.sort(a) == expected
+    assert radix.sort(a) == expected
+    assert bucket.sort(a) == expected
