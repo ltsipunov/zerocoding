@@ -1,12 +1,10 @@
 import pytest
-import bubble, heap, gnome, shell, radix
+import bubble, selection, insertion, quick, merge, heap, gnome, shell, radix, bucket, counting
 
 from random import sample
 
-
 def standard(a):
     return sorted(a)
-
 
 a10k = [ i for i in range(10_000)]
 s10k = sample(a10k,10_000)
@@ -24,7 +22,13 @@ print(a10k[10:20],s10k[10:20],)
 def test_check_with_param(a, expected):
     assert standard(a) == expected
     assert bubble.sort(a) == expected
+    assert insertion.sort(a) == expected
+    assert selection.sort(a) == expected
+    assert quick.sort(a) == expected
+    assert merge.sort(a) == expected
     assert heap.sort(a) == expected
     assert gnome.sort(a) == expected
     assert shell.sort(a) == expected
     assert radix.sort(a) == expected
+    assert bucket.sort(a) == expected
+    assert counting.sort(a) == expected
